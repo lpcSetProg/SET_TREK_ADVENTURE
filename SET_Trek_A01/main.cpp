@@ -1,3 +1,6 @@
+
+
+
 #pragma comment(lib, "d2d1.lib")
 #include <Windows.h>
 #include "Graphics.h"
