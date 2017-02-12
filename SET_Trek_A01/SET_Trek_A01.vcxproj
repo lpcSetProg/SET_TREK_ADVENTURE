@@ -133,6 +133,14 @@
   <ItemGroup>
     <ResourceCompile Include="SET_Trek_A01.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\Planet1.bmp" />
+    <Image Include="Images\Planet2.bmp" />
+    <Image Include="Images\Planet3.bmp" />
+    <Image Include="Images\SectorBackground.bmp" />
+    <Image Include="Images\ShipBase.bmp" />
+    <Image Include="Images\ShipDetail.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
