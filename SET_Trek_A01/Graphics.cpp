@@ -1,4 +1,11 @@
-
+/*
+* Filename:         Graphics.cpp
+* Project:          PROG2215 - G.A.S. - Assignment - 01 - SET Trek
+* Programmer:       Lev Cocarell
+* Date:             2017-02-01
+* Description:
+* Source: Russ' example 
+*/
 
 
 
@@ -6,13 +13,36 @@
 
 #include "Graphics.h"
 
+
+
+//=============================================================================
+// Constructor
+//=============================================================================
 //Constructor for Graphics class
 Graphics::Graphics()
 {
 	factory = NULL;
 	rendertarget = NULL;
 	brush = NULL;
+
+	/*
+	direct3d = NULL;
+    device3d = NULL;
+    fullscreen = false;
+    width = GAME_WIDTH;    // width & height are replaced in initialize()
+    height = GAME_HEIGHT;	
+	*/
+
+
 }
+
+
+
+
+
+//=============================================================================
+// Destructor
+//=============================================================================
 
 //Destructor for Graphics class
 //Note that all COM objects we instantiate should be 'released' here 
@@ -24,6 +54,9 @@ Graphics::~Graphics()
 	if (rendertarget) rendertarget->Release();
 	if (brush) brush->Release();
 }
+
+
+
 
 //Provide some comments for each of the methods below.
 //Be sure you get a sense of what is happening, and resolve any issues you have understanding these
@@ -47,10 +80,19 @@ bool Graphics::Init(HWND windowHandle)
 	return true;
 }
 
+
+
+
+
+
 void Graphics::ClearScreen(float r, float g, float b) 
 {
 	rendertarget->Clear(D2D1::ColorF(r, g, b));
 }
+
+
+
+
 
 void Graphics::DrawCircle(float x, float y, float radius, float r, float g, float b, float a)
 {

@@ -1,3 +1,14 @@
+/*
+* Filename:         resource.h
+* Project:          PROG2215 - G.A.S. - Assignment - 01 - SET Trek
+* Programmer:       Lev Cocarell
+* Date:             2017-02-01
+* Description:
+* Source: Russ' example
+*/
+
+
+
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
 // Used by SET_Trek_A01.rc

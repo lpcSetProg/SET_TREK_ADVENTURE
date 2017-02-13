@@ -1,11 +1,25 @@
-
+/*
+* Filename:         main.cpp
+* Project:          PROG2215 - G.A.S. - Assignment - 01 - SET Trek
+* Programmer:       Lev Cocarell
+* Date:             2017-02-01
+* Description:
+* Source: Russ' example 
+*/
 
 
 #pragma comment(lib, "d2d1.lib")
+
 #include <Windows.h>
 #include "Graphics.h"
 
 Graphics* graphics;
+
+
+
+//=============================================================================
+// window event callback function
+//=============================================================================
 
 /*
 Your Mission: Document the following code. What do all these components do?
@@ -24,6 +38,15 @@ LRESULT CALLBACK WindowProc(
 
 	return DefWindowProc(hwnd, uMsg, wParam, lParam);
 }
+
+
+
+
+
+
+//=============================================================================
+// Starting point for a Windows application
+//=============================================================================
 
 // Have you seen a 'main' for a Win32 app before? Please comment this.
 int WINAPI wWinMain(
